@@ -1,0 +1,41 @@
+---
+title: 'How to Connect GitHub Pages to a Custom Domain'
+date: '2023-01-15'
+tags: ['Domain', 'GitHub Pages', 'namecheap', 'tutorial', 'Tips']
+layout: PostBanner
+draft: false
+images:
+  [
+    'https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1488&q=80',
+  ]
+summary: 'This guide shows how to link GitHub Pages to a custom domain using Namecheap.'
+authors: ['default']
+---
+
+# Introduction
+
+This guide demonstrates how to link GitHub Pages to a custom domain using Namecheap. The same method can be applied to other registrars like GoDaddy.
+
+# Steps
+
+1. **Purchase a Domain**
+2. In GitHub repository settings, click on **Pages** and add the domain you purchased to the 'Custom domain' box (exclude 'www').
+3. **Enforce HTTPS** (Optional)
+4. In the dashboard, ensure the domain's NAMESERVERS are set to Basic DNS.
+5. Click the **Manage** button for the domain name you selected.
+6. Click **Advanced DNS**.
+7. For the HOST RECORDS, add new records:
+
+   - **Type**: CNAME
+     - **Host**: www
+     - **Value**: username.github.io
+     - **TTL**: Automatic
+   - **Type**: A Records (@)
+     - **Host**: @
+     - **Value**: 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153
+     - **TTL**: Automatic
+
+   Make sure to check the [official docs](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain) for the most up-to-date values.
+
+8. Remove old records.
+9. Done. Visit the domain and be patient!

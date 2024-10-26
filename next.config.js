@@ -85,6 +85,14 @@ module.exports = () => {
           protocol: 'https',
           hostname: 'sns-webpic-qc.xhscdn.com',
         },
+        {
+          protocol: 'https',
+          hostname: 'docs.flutter.dev',
+        },
+        {
+          protocol: 'https',
+          hostname: 'images.unsplash.com',
+        },
       ],
       unoptimized,
     },
