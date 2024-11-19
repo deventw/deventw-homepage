@@ -1,0 +1,35 @@
+---
+title: "[React Package] - International Phone Number Formatting"
+date: "2024-11-19"
+draft: false
+summary: "Package sharing."
+tags: ["npm", "React", "JavaScript", "TypeScript", "Phone Number", "Formatting"]
+---
+
+## Intro
+A useful package for phone number formatting as international.
+
+## Commonn Format Type
+```
+E164 : +886920123456
+INTERNATIONAL : +886 920 123 456
+NATIONAL : 0920 123 456
+RFC3966 : 920 123 456
+```
+
+## Packages
+1. [awesome-phonenumber (JS)](https://www.npmjs.com/package/awesome-phonenumber)
+
+```
+const pn = parsePhoneNumber( '0707123456', { regionCode: 'SE' } ); 
+```
+A smaller size, modified version of Google’s libphonenumber with a more user-friendly API interface.
+
+
+2. [google-libphonenumber](https://github.com/ruimarinho/google-libphonenumber)
+
+The up-to-date and reliable Google's libphonenumber package for node.js. Zero dependencies.
+
+
+## Ref
+> https://medium.com/frochu/libphonenumber-example-app-f60680faa599
