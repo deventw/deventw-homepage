@@ -11,7 +11,7 @@ const projectsData: Project[] = [
     description:
       'Swing Fridge is an intuitive app for tracking refrigerator contents, helping maintain freshness and reduce waste. Easily manage food items with features like expiration reminders.',
     imgSrc:
-      'https://sns-webpic-qc.xhscdn.com/202410252104/b56ebafee73dd6d6352b21f2b6fa9e69/217/0/01e68d42ae73d6170010000000019097cc884e_0.jpg!nc_n_webp_mw_1',
+      'https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f9/b4/3f/f9b43f14-9cb3-08e6-e787-cf6182e8933a/ipad_U7aef-_U82f1_U8bed-1.jpg/1980x0w.webp',
     href: '/blog/swingfridge',
   },
   // {

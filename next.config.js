@@ -93,6 +93,10 @@ module.exports = () => {
           protocol: 'https',
           hostname: 'images.unsplash.com',
         },
+        {
+          protocol: 'https',
+          hostname: 'is1-ssl.mzstatic.com',
+        },
       ],
       unoptimized,
     },

@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* background-color: #1e1e2f;  */
+  /* Dark background for contrast */
+}
+
+.flower {
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
+.circle {
+  fill: none;
+  stroke: #ff79c6; /* Cool pink glow */
+  stroke-width: 2;
+  animation:
+    grow 2s ease-out forwards,
+    pulse 3s infinite ease-in-out;
+  opacity: 0;
+}
+
+/* Animation for growing the circles */
+@keyframes grow {
+  0% {
+    r: 0; /* Circle starts with radius 0 */
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    r: 50; /* Final radius matches the circle's radius */
+    opacity: 1;
+  }
+}
+
+/* Animation for pulsating effect */
+@keyframes pulse {
+  0%,
+  100% {
+    stroke-width: 2; /* Default stroke width */
+  }
+  50% {
+    stroke-width: 4; /* Thicker stroke during pulse */
+  }
+}

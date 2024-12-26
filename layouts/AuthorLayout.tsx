@@ -2,6 +2,7 @@ import { ReactNode } from 'react'
 import type { Authors } from 'contentlayer/generated'
 import SocialIcon from '@/components/social-icons'
 import Image from '@/components/Image'
+import FlowerOfLife from '@/components/FlowerOfLife/FlowerOfLife'
 
 interface Props {
   children: ReactNode
@@ -19,7 +20,13 @@ export default function AuthorLayout({ children, content }: Props) {
             About
           </h1>
         </div>
-        <div className="items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">
+        <div
+          className="items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0"
+          style={{ position: 'relative' }}
+        >
+          <div style={{ width: '100%', position: 'absolute', zIndex: '-1', opacity: 0.15 }}>
+            <FlowerOfLife />
+          </div>
           <div className="flex flex-col items-center space-x-2 pt-8">
             {avatar && (
               <Image
